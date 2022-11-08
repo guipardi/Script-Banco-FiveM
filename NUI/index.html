@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fleeca</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/estilo.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head> 
+<body class="body-desativado">
+
+  <div class="container">
+
+    <header class="header-img">
+
+      <img src="assets/img/fleeca.png" alt="" class="logo">
+
+    </header>
+
+    <header class="header-msg">
+
+      <p>Olá, <b>Guilherme Pardi</b><br>Seja bem vindo!</p>
+
+    </header>
+
+    <aside class="aside">
+
+      <div class="aside-conteudo">
+
+        <div class="carteira">
+
+          <p>Carteira</p>
+          <p class="carteira-p"></p>
+
+        </div>
+
+        <div class="foto-banco">
+          
+          <div class="foto"><img src="assets/img/imagemJogador.png" alt=""></div>
+
+          <div class="saldo-bancario">
+
+            <p class="saldo-bancario-texto">Saldo Bancário</p>
+            <p class="banco-p"></p>
+
+          </div>
+
+        </div>
+
+      </div>  
+
+    </aside>
+
+    <main class="main">
+
+      <div class="acoes-com-titulo">
+
+        <p class="categorias">Categorias</p>
+
+        <div class="acoes">
+
+          <button class="botao botao-depositar">
+            <div class="depositar">
+              <img src="assets/img/imagemDepositar.svg" alt="">
+              <p>Depositar</p>
+            </div>
+          </button>
+
+          <button class="botao botao-sacar">
+            <div class="sacar">
+              <img src="assets/img/imagemSacar.svg" alt="">
+              <p>Sacar</p>
+            </div>
+          </button>
+        </div>
+
+        <form class="form flex-ativado">
+            <div class="valor-depositar desativado">
+
+              <img src="assets/img/imagemDepositar.svg" alt="">
+              
+              <label>
+                Insira um valor
+                <input type="text" name="depositar">
+
+              </label>
+
+              <button class="botao-depositar-sacar botao-depositar">Depositar</button>
+
+            </div>
+
+            <div class="valor-sacar">
+
+              <img src="assets/img/imagemSacar.svg" alt="">
+              
+              <label>
+                Insira um valor
+                <input type="text" name="sacar">
+
+              </label>
+
+              <button class="botao-depositar-sacar botao-sacar">Sacar</button>
+
+            </div>
+          </form>
+      </div>
+
+        <!-- <div class="sacar-depositar">
+          <form class="form">
+            <div class="valor-depositar">
+
+              <img src="assets/img/imagemDepositar.svg" alt="">
+              
+              <label>
+                Insira um valor
+                <input type="text" name="depositar">
+
+              </label>
+
+              <button class="botao-depositar-sacar botao-depositar">Depositar</button>
+
+            </div>
+
+            <div class="valor-sacar">
+
+              <img src="assets/img/imagemSacar.svg" alt="">
+              
+              <label>
+                Insira um valor
+                <input type="text" name="sacar">
+
+              </label>
+
+              <button class="botao-depositar-sacar botao-sacar">Sacar</button>
+
+            </div>
+          </form>
+        </div> -->
+
+        <div class="div-footer">
+
+          <p class="p-noticias">Notícias</p>
+  
+          <div class="noticias">
+  
+            <ul class="lista-noticias">
+  
+              <li class="lista-noticias-itens">
+                Nesta noite de sexta-feira, ocorreu uma <b>queda de 30%</b> nas cryptomoedas.
+              </li>
+  
+              <li class="lista-noticias-itens">
+                O índice de queda das cryptomoedas alcançou <b>a maior procentagem</b>, nos últimos dois meses.
+              </li>
+  
+              <li class="lista-noticias-itens">
+                Ações da <b>BINCO</b> dispararam nos últimos dois dias, agora é hora de investir
+              </li>
+  
+            </ul>
+  
+          </div> 
+  
+        </div>
+
+    </main>
+
+  </div>
+
+  <script src="main.js"></script>
+  <script src="saldos.js"></script>
+  <script src="calcular.js"></script>
+</body>
+</html>

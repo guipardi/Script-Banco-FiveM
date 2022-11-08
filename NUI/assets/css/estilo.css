@@ -1,0 +1,243 @@
+body {
+  box-sizing: border-box;
+}
+
+.body-desativado {
+  display: none;
+}
+
+b {
+  font-weight: 800;
+}
+
+input, input:active {
+  border: 0;
+  outline: none;
+  text-align: center;
+}
+
+.botao {
+  background-color: #141414;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.725rem;
+  cursor: pointer;
+}
+
+.botao p {
+  color: #ffffff;
+}
+
+.botao-depositar-sacar {
+  cursor: pointer;
+}
+
+.desativado {
+  display: none;
+}
+
+.ativado {
+  display: block;
+}
+
+.container {
+  margin: 3rem 0;
+  display: grid; /* Grid principal */
+  grid-template-areas: 
+    "header-img header-msg"
+    "aside main"
+  ;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+.header-img {
+  grid-area: header-img;
+  background-color: #0A0A0A;
+  border-bottom: 2px solid #347E36;
+  text-align: center;
+}
+
+.header-msg {
+  grid-area: header-msg;
+  background: linear-gradient(to right, #51AB3D, #23BD7B);
+}
+
+.header-msg p {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  color: #ffffff;
+}
+
+.aside {
+  grid-area: aside;
+  background: #0A0A0A;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.325rem;
+  height: 50rem;  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+}
+
+.aside .aside-conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1.5rem auto;
+  width: 85%;
+}
+
+.aside .aside-conteudo .carteira {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #ffffff;
+}
+
+.aside .aside-conteudo .foto-banco {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #ffffff;
+}
+
+.aside .aside-conteudo .foto-banco .saldo-bancario {
+  margin-left: 1rem;
+}
+
+
+
+/* PRIMEIRO PÁGINA MAIN, SEM OS FORMULÁRIOS, SOMENTE OS BOTÕES */
+
+.main {
+  grid-area: main;
+  background-color: #0A0A0A;
+}
+
+.main .acoes-com-titulo {
+  margin: 2rem 0 0 2rem;
+  width: 50%;
+}
+
+.main .acoes-com-titulo .categorias {
+  font-size: 1.125rem;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 0.225rem;
+  color: #ffffff;
+}
+
+.main .acoes-com-titulo .acoes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0.325rem;
+}
+
+.main .sacar-depositar {
+  display: none;
+}
+
+/* FINALIZANDO A PÁGINA MAIN, SEM OS FORMULÁRIOS, SOMENTE OS BOTÕES */
+
+.form {
+  color: #ffffff;
+  display: none;
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.valor-depositar {
+  display: grid;
+  grid-template-areas: 
+    "img input"
+    "img input"
+    "img botao"
+  ;
+  grid-template-columns: auto 1fr;
+}
+
+.valor-depositar img {
+  grid-area: img;
+}
+
+.valor-depositar label {
+  grid-area: input;
+}
+
+.valor-depositar label {
+  display: flex;
+  flex-direction: column;
+}
+
+.valor-depositar button {
+  grid-area: botao;
+}
+
+
+
+.valor-sacar {
+  display: grid;
+  grid-template-areas: 
+    "input img"
+    "input img"
+    "botao img"
+  ;
+  grid-template-columns: auto 1fr;
+}
+
+.valor-sacar img {
+  grid-area: img;
+}
+
+.valor-sacar label {
+  grid-area: input;
+  text-align: end;
+}
+
+.valor-sacar label {
+  display: flex;
+  flex-direction: column;
+}
+
+.valor-sacar button {
+  grid-area: botao;
+}
+/* SEGUNDA PÁGINA MAIN, COM OS FORMULÁRIOS */
+
+/* FINALIZANDO A SEGUNDA PÁGINA MAIN, COM OS FORMULÁRIOS */
+
+
+
+.main {
+  position: relative;
+}
+
+.div-footer {
+  grid-area: footer;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  background: #0A0A0A;
+  color: #ffffff;
+  margin-bottom: 1.625rem;
+}
+
+.div-footer .p-noticias {
+  text-align: center;
+  margin-bottom: 0.625rem;
+}
+
+.div-footer .lista-noticias {
+  list-style-type: disc;
+}
+
+.div-footer .lista-noticias .lista-noticias-itens{
+  padding: 0.325rem;
+}
